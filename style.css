@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+  
+.clear_both {
+  display: block;
+  clear: both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Slabo 27px', serif;
+  /* background: #000000; */
+}
+
+nav{
+  /* background: #eeeeee; */
+  /* padding: 10px; */
+  position: fixed;
+  /* box-shadow: inset 0px 0px 5px 2px lightgrey; */
+  width: 200px;
+  top: 1px;
+  /* left: 10px; */
+  text-align: left;
+  z-index: 999;
+}
+/* 
+#blocks > div {
+  float: left;
+  box-shadow: 2px 2px 7px 0px gray;
+} */
+
+nav > svg {
+  margin-left: 1px;
+  color: #000;
+  font-size: 25px !important;
+}
+
+#content {
+  margin: 10px auto;
+  box-shadow: 5px 10px 7px 3px #f3f3f3;
+  /* width: 700px; */
+  min-height: 630px;
+  padding: 10px 15px;
+}
+
+.editorsView {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+}
+
+.draggable {
+  /* width: 200px; */
+  /* height: 200px; */
+  background: lightblue;
+  padding: 7px 0 1px;
+  position: relative;
+  font-size: 14pt;
+  margin: 0px 0 10px;
+  left: 0;
+  /* position: absolute; */
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: grabbing;
+  /* display: none; */
+}
+
+#sortable > .draggable {
+  background: none;
+  color: #fff;
+  text-align: cnetr !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: auto !important;
+}
+
+#sortable #contenteditable {
+  width: 600px !important;
+}
+
+.draggable .drag_handle {
+  position: absolute;
+  top: 8px;
+  left: -10px;
+  /* background: orange; */
+  font-weight: bold;
+  display: none;
+  cursor: pointer;
+  /* padding: 2px; */
+  color: #000;
+}
+
+.draggable button {
+  display: none;
+}
+
+#sortable > .draggable button {
+  display: inline;
+  float: left;
+  margin-left: 15px;
+  border: 0;
+  background: transparent;
+}
+.ui-state-highlight {
+  background: black;
+  opacity: 0.5;
+  height: 2.5em;
+  line-height: 1.2em; 
+}
+
+#eloqua, #banner {
+  display: none;
+}
+
+ * {
+   color: #000;
+ }
+
+ xmp {
+   white-space: nowrap;
+ }
